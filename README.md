@@ -1,4 +1,4 @@
-包含以下插件
+# 包含以下插件，已验证全部安装不会造成冲突无法编译，放心食用
 
 https://github.com/mchome/openwrt-vlmcsd # KMS激活核心
 
