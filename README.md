@@ -1,9 +1,5 @@
 # 包含以下插件，已验证全部安装不会造成冲突无法编译，放心食用
 
-https://github.com/mchome/openwrt-vlmcsd # KMS激活核心
-
-https://github.com/mchome/luci-app-vlmcsd # KMS激活
-
 https://github.com/xiaorouji/openwrt-passwall passwalldep -b packages # passwall依赖
 
 https://github.com/xiaorouji/openwrt-passwall -b luci # passwall
