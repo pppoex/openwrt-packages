@@ -1,0 +1,28 @@
+{
+	"luci-app-cpufreq": {
+		"description": "Grant UCI access for luci-app-cpufreq",
+		"read": {
+			"cgi-io": [ "exec" ],
+			"file": {
+				"/proc/stat": [ "read" ],
+				"/sys/devices/system/cpu/cpufreq/*": [ "read" ]
+			},
+			"ubus": {
+				"file": [ "exec", "remove", "stat" ],
+				"luci.cpu": [ "*" ]
+			},
+			"uci": [ "cpufreq" ]
+		},
+		"write": {
+			"file": {
+				"/etc/init.d/cpufreq2 *" : [ "exec" ],
+				"/sys/devices/system/cpu/cpufreq/*": [ "write" ]
+			},
+			"ubus": {
+				"file": [ "exec", "remove", "write" ],
+				"luci.cpu": [ "*" ]
+			},
+			"uci": [ "cpufreq" ]
+		}
+	}
+}

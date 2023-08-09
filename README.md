@@ -1,25 +1,37 @@
-包含以下插件
+# openwrt-packages
+国内常用 OpenWrt 软件包源码合集，每天自动更新，建议使用 lean 源码
 
-https://github.com/mchome/luci-app-vlmcsd # KMS激活
+## 由于 GitHub 会对近期未提交的仓库 Actions 功能进行冻结，如果您发现自动更新出现问题，请在 issues 提出！
 
-https://github.com/xiaorouji/openwrt-passwall passwalldep -b packages # passwall依赖
 
-https://github.com/xiaorouji/openwrt-passwall -b luci # passwall
+## 欢迎加入群聊【OP编译交流小组】：[472239598](https://jq.qq.com/?_wv=1027&k=Lzxb18xM)
+## 推广
+- [倾城极速机场](https://qcjs.cc)
 
-https://github.com/siwind/luci-app-wolplus # 网络唤醒++
+## 有问题请发issue，我不上恩山的！！！
+请求加入xxx软件包/问题反馈也请使用issue  
+您也可以在[这个仓库](https://github.com/liuran001/openwrt-packages_action)发送PR
 
-https://github.com/sirpdboy/luci-app-advanced # 高级设置
 
-https://github.com/sirpdboy/luci-app-ddns-go # DDNS-GO
+## 食用方式（三选一）：
+`还是建议按需取用，不然碰到依赖问题不太好解决`
+1. 先cd进package目录，然后执行
+```bash
+ git clone https://github.com/liuran001/openwrt-packages
+```
+2. 或者添加下面代码到feeds.conf.default文件
+```bash
+ src-git liuran001_packages https://github.com/liuran001/openwrt-packages
+```
+3. 先cd进package目录，然后执行
+```bash
+ svn co https://github.com/liuran001/openwrt-packages/branches/packages
+```
 
-https://github.com/sirpdboy/luci-app-netwizard # 快捷设置
+## 不要为了下载而Fork这个项目
 
-https://github.com/jerrykuku/luci-app-argon-config # Argon主题设置
+## 赞助
+- [爱发电](https://afdian.net/a/BDovo)
+## Stargazers over time
 
-https://github.com/jerrykuku/luci-theme-argon # Argon主题
-
-https://github.com/openwrt-xiaomi/luci-app-cpufreq # CPU性能调节
-
-https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic # 解锁网易云
-
-https://github.com/f8q8/luci-app-autoreboot # 自动重启
+[![Stargazers over time](https://starchart.cc/liuran001/openwrt-packages.svg)](https://starchart.cc/liuran001/openwrt-packages)

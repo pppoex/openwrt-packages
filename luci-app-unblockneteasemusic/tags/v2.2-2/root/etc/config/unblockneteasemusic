@@ -1,0 +1,11 @@
+
+config unblockneteasemusic
+	option enable '0'
+	option http_port '5200'
+	option https_port '5201'
+	option music_source 'default'
+	option hijack_ways 'use_ipset'
+	option auto_update '0'
+	option advanced_mode '0'
+	option pub_access '0'
+	option strict_mode '0'
